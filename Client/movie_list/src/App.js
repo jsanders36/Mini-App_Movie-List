@@ -11,10 +11,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        MOVIES:
         <p>
           {movies.map((movie) => {
             return (
-              movie.title + " "
+              <ul>
+                <li>{movie.title}</li>
+              </ul>
             )
           })}
         </p>
